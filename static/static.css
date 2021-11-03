@@ -2724,6 +2724,17 @@ padding-left: 42px;
   text-decoration: none;
 }
 
+/** Trying to add this little word count widget!? **/
+.word-count {
+    color: white;
+    background-color: #CCC;
+    border-radius: 1em;
+    float: right;
+    font-size: .8em;
+    line-height: 2;
+    padding: 0 1em;
+}
+
 @media (min-width: 960px) {
 .tc-sidebar-scrollable {
     position: fixed;
