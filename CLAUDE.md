@@ -10,7 +10,6 @@ Live at: bjornpaedia.wjerk.shop (deployed via GitHub Pages, CNAME configured)
 - The site is **fully static** — no interactive/editable "live" TiddlyWiki is published here. `index.html` is a generated homepage (a filtered list of entries linking into `static/`), not the single-file interactive wiki.
 - `index.html` — generated static homepage, rendered from `$:/core/templates/static.template.html` (shadow-customized in the source wiki)
 - `static/` — individual tiddler exports as standalone HTML files (URL-encoded filenames)
-- `dynamic.html`, `tiddlers.html`, `tiddlywiki.html`, `0202401050238-alltiddlers.html`, `z-old/` — legacy/archived files from earlier setups, **not** touched by the current publish pipeline; don't touch unless explicitly asked
 - No build step here; GitHub Pages serves the files directly
 
 **Why fully static (as of 2026-07-14):** the site used to also publish a full interactive single-file wiki (`index.html` built from the TiddlyWiki core's "offline save" template) plus `static.html`/`alltiddlers.html` (an all-tiddlers single-file dump). All three embedded the *entire* tiddler store with no `private`/`hide` filtering — confirmed a `private`/`hide`-tagged entry was leaking into all three published files even though it was correctly excluded from `static/`. Static-only output is now the only thing published, since per-tiddler files are the only build path that reliably respects the exclusion.
@@ -24,7 +23,7 @@ Live at: bjornpaedia.wjerk.shop (deployed via GitHub Pages, CNAME configured)
 - `sentence-a-day/publish.sh` runs that build, then syncs the output into this repo:
   - `static/` is synced with `rsync --delete` — it's fully generated and disposable; hand-edits there get wiped on the next publish
   - `index.html` is copied over directly
-  - everything else in this repo (this file, `README.md`, `CNAME`, the legacy files above) is left untouched
+  - everything else in this repo (this file, `README.md`, `CNAME`) is left untouched
 - **Tiddlers tagged `private` or `hide` in the source wiki are intentionally excluded** from what gets published here — if a tiddler you'd expect to see is missing from `static/`, check its tags in `sentence-a-day` before assuming something's broken
 - The publish script pauses for manual confirmation before committing/pushing here — pushing to `master` is what triggers GitHub Pages to redeploy
 
