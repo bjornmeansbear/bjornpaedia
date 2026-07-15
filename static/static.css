@@ -950,7 +950,8 @@ a.tc-tiddlylink:hover {
 }@media (max-width: 959px) {.tc-sidebar-header {
 		padding: 14px;
 		min-height: 32px;
-		margin-top: 0px;
+		margin-top: 54px
+;
 		transition:  min-height 0ms ease-in-out, padding-top 0ms ease-in-out, padding-bottom 0ms ease-in-out;
 	}.tc-story-river {
 		position: relative;
@@ -960,7 +961,8 @@ a.tc-tiddlylink:hover {
 		margin: 21px -21px 21px -21px;
 	}.tc-sidebar-scrollable {
 		position: fixed;
-		top: 0px;
+		top: 54px
+;
 		left: 60%;
 		bottom: 0;
 		right: 0;
@@ -975,7 +977,8 @@ a.tc-tiddlylink:hover {
 	}.tc-story-river {
 		position: relative;
 		left: 0px;
-		top: 0px;
+		top: 54px
+;
 		width: 60%;
 		padding: 42px 42px 42px 42px;
 	}.tc-story-river.tc-static-story-river {
@@ -2725,6 +2728,10 @@ body.tc-dirty span.tc-dirty-indicator svg {
   border:1px solid blue;
   word-break: break-all; word-wrap: break-word;
 }
+.tc-body {
+    margin-top: 3em;
+}
+
 /* Trying something clever w/ titles of tiddlers */
 /* .tc-tiddler-title { */
 .tc-title {
@@ -2759,17 +2766,16 @@ margin-top: 14px;
   .explorerWrap {
     margin: 2rem -42px -42px;
   }
-.explorerWrap:last-of-type {
-  margin-bottom: -42px;
-}
+  .explorerWrap:last-of-type {
+    margin-bottom: -42px;
+  }
 
-.dateExplorer + .linkExplorer,
-.tagExplorer + .dateExplorer,
-.tagExplorer + .linkExplorer {
-margin-top: 42px;
+  .dateExplorer + .linkExplorer,
+  .tagExplorer + .dateExplorer,
+  .tagExplorer + .linkExplorer {
+    margin-top: 42px;
+  }
 }
-}
-
 
 .explorerWrap .column {
   flex: 1;
@@ -2849,6 +2855,147 @@ padding-left: 42px;
   text-decoration: none;
 }
 
+/** Adding Wjerk Nav **/
+/** Nav back to the other Wjerk properties (portfolio, store, newsletter) **/
+.wjerk-nav {
+<<<<<<< HEAD
+    display: flex;
+    margin-top: 0;
+    background: white;
+=======
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+>>>>>>> 45a2712a96b5ec590edca097a7a0a1ad13d5ce29
+}
+
+.wjerk-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 0;
+  margin: 0;;
+  width: 100%;
+}
+
+.wjerk-nav ul li {
+  display: flex;
+  border-left: 1px solid;
+  flex: 1 1 50%;
+  height: inherit;
+}
+
+.wjerk-nav ul li:nth-child(odd) {
+  border-left: none;
+}
+
+.wjerk-nav ul li:nth-child(n+3) {
+  border-top: 1px solid;
+}
+
+.wjerk-nav a {
+  display: block;
+  padding: 1em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.wjerk-nav a:hover {
+  background-color: blue;
+  color: white;
+}
+
+.tc-hide-sidebar-btn {
+    padding: 9px 6px 7px 8px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;  
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+/* ============================================================================
+   Progressive enhancement from here up: everything above is the mobile
+   baseline; this query layers on the side-by-side desktop treatment once
+   there's enough width for it to actually read well.
+   ============================================================================ */
+@media (min-width: 40rem) {
+  .wjerk-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+
+  .wjerk-nav ul {
+    flex-wrap: nowrap;
+
+  }
+
+  .wjerk-nav ul li {
+    display: flex;
+    flex: 1;
+    align-items: center;    /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
+    align-self: stretch;
+  }
+
+  .wjerk-nav a {
+    display: flex;
+    align-items: center;    /* Centers text vertically */
+    justify-content: center; /* Centers text horizontally */
+    padding: 1em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    width: 100%;
+  }
+
+  .wjerk-nav ul li:nth-child(n+3) {
+    border-top: none;
+  }
+
+  .wjerk-nav ul li:first-child {
+    border-left: none;
+  }
+
+  .wjerk-nav ul li:not(:first-child) {
+    border-left: 1px solid;
+  }
+}
+
+/** Push page content down below the fixed .wjerk-nav bar. Below 40rem the
+    nav isn't fixed (see above) so it takes up its own space in normal flow
+    — no padding needed. Above 960px, the sidebar/story-river switch to
+    explicit top-offset positioning (storytop metric for the live wiki,
+    hardcoded values in the static build's KB additions), so this padding
+    backs off to 0 there too. **/
+@media (min-width: 40rem) {
+  .tc-page-container,
+  body.tc-body {
+    padding-top: 54px;
+  }
+}
+@media (min-width: 960px) {
+  .tc-page-container,
+  body.tc-body {
+    padding-top: 0;
+  }
+}
+
 /** Trying to add this little word count widget!? **/
 .word-count {
     color: white;
@@ -2861,7 +3008,7 @@ padding-left: 42px;
 }@media (min-width: 960px) {
 .tc-sidebar-scrollable {
     position: fixed;
-    top: 0px;
+    top: 54px;
     left: 60%;
     bottom: 0;
     right: 0;
@@ -2873,7 +3020,7 @@ padding-left: 42px;
 }.tc-story-river {
     width: 60%;
     position: relative;
-    top: 0;
+    top: 54px;
     left: 0;
     margin-left: 0px;
     margin-right: 40%;
