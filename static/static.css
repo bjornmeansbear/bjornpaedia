@@ -2728,10 +2728,6 @@ body.tc-dirty span.tc-dirty-indicator svg {
   border:1px solid blue;
   word-break: break-all; word-wrap: break-word;
 }
-.tc-body {
-    margin-top: 3em;
-}
-
 /* Trying something clever w/ titles of tiddlers */
 /* .tc-tiddler-title { */
 .tc-title {
@@ -2858,6 +2854,10 @@ padding-left: 42px;
 /** Adding Wjerk Nav **/
 /** Site identity block (logo + blurb), matching the condensed header used
     on a.wjerk.shop case-study pages. **/
+.tc-page-container-inner > p {
+  margin: 0;
+}
+
 .wjerk-header {
   display: flex;
   flex-wrap: wrap;
@@ -2871,20 +2871,19 @@ padding-left: 42px;
   flex-basis: 100%;
   align-items: center;
   justify-content: center;
-  height: 4em;
-  padding: 0.5em;
+  height: 3em;
 }
 
 .wjerk-header-logo img {
   height: 100%;
   width: auto;
+  padding: .25em;
 }
 
 .wjerk-header-blurb {
   flex-basis: 100%;
-  padding: 0.5em 1em 1em;
-  font-size: 1rem;
-  text-align: center;
+  padding: 1rem;
+  font-size: 1.33em;
 }
 
 .wjerk-header-blurb p {
