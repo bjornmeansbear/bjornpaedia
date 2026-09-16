@@ -6,6 +6,8 @@ Like wikipedia; but it is just my personal collection of stuff relating to susta
 
 A knowledge garden? is that the right term?
 
+Slowly collecting content. Merging things from various old sites of mine as well from over the years. Part of the greater Wjerk (https://a.wjerk.shop) family of projects and outputs.
+
 Enjoy.
 
 > **License:** Where the content in this document is by Kristian Bjornard (and not otherwise owned by, quoted from, or credited to someone else), it is licensed with [Creative Commons Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/). You can use this text for whatever you want as long as you cite where it came from, like linking back to this repo or merely stating that it came from Kristian Bjornard, and you must also license/share whatever you make in the same way -- share and share alike; let us create a freer and better and evolving culture!
