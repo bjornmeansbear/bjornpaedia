@@ -4,6 +4,8 @@ live web version of the stuff I am working on over in https://github.com/bjornme
 
 Like wikipedia; but it is just my personal collection of stuff relating to sustainability, free/libre open source, designing, and other flights of fancy part of some train of thought.
 
+A knowledge garden? is that the right term?
+
 Enjoy.
 
 > **License:** Where the content in this document is by Kristian Bjornard (and not otherwise owned by, quoted from, or credited to someone else), it is licensed with [Creative Commons Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/). You can use this text for whatever you want as long as you cite where it came from, like linking back to this repo or merely stating that it came from Kristian Bjornard, and you must also license/share whatever you make in the same way -- share and share alike; let us create a freer and better and evolving culture!
