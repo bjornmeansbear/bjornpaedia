@@ -1107,7 +1107,7 @@ a.tc-tiddlylink:hover {
 	margin: 0 0.25em;
 }.tc-tiddler-controls button.tc-selected svg,
 .tc-page-controls button.tc-selected svg  {
-	fill: #8ca573;
+	fill: #89A271;
 }.tc-tiddler-controls button.tc-btn-invisible:hover svg,
 .tc-search button:hover svg, .tc-search a:hover svg {
 	fill: #C53965;
@@ -1193,8 +1193,8 @@ a.tc-tiddlylink:hover {
 }.tc-editor-toolbar button {
 	vertical-align: middle;
 	background-color: #2D2826;
-	color: #8ca573;
-	fill: #8ca573;
+	color: #89A271;
+	fill: #89A271;
 	border-radius: 4px;
 	padding: 3px;
 	margin: 2px 0 2px 4px;
@@ -1212,7 +1212,7 @@ a.tc-tiddlylink:hover {
 }.tc-editor-toolbar .tc-drop-down button.tc-btn-mini {
 	padding: 2px 4px;
 }.tc-editor-toolbar button:hover {
-	background-color: #8ca573;
+	background-color: #89A271;
 	fill: #F8FAE7;
 	color: #F8FAE7;
 }.tc-editor-toolbar .tc-text-editor-toolbar-more {
@@ -2720,14 +2720,6 @@ body.tc-dirty span.tc-dirty-indicator svg {
 		transform: scale(359deg);
 	}
 }
-.matched {
-  background-color:blue;
-  color: white;
-}
-.tw-context {
-  border:1px solid blue;
-  word-break: break-all; word-wrap: break-word;
-}
 /* One spacing token for the tiddler card's inner padding (14px on small
    screens, 42px from 960px up, matching the vanilla theme). Everything that
    has to bleed out to the card's edge, or line up with its text, uses this
@@ -3089,15 +3081,15 @@ a.tc-tag-label:is(:hover, :focus-visible) {
    more than one background, so the pairings that fall under 3:1 are fixed here
    and the palette keeps one value apiece.
    Selected icon on the page ground (info panel open, etc.): the palette green
-   would be 2.56:1; the darker pink is 7.33:1. */
+   (kit green-4) would be 2.65:1; the darker pink is 7.33:1. */
 .tc-tiddler-controls button.tc-selected svg,
 .tc-page-controls button.tc-selected svg {
   fill: var(--color-accent-hover);
 }
-/* Editor toolbar: dark buttons with green icons (5.37:1) come straight from
-   the palette. A selected button turns cornflower, where green is 2.88:1, so
+/* Editor toolbar: dark buttons with green icons (5.18:1) come straight from
+   the palette. A selected button turns cornflower, where green is 2.78:1, so
    its icon takes the ground color (7.38:1). A hovered button turns green,
-   where the ground color is 2.56:1, so its icon takes the ink (5.37:1). */
+   where the ground color is 2.65:1, so its icon takes the ink (5.18:1). */
 .tc-editor-toolbar button.tc-selected {
   color: var(--color-bg);
   fill: var(--color-bg);
