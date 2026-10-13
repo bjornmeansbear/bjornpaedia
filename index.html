@@ -11,7 +11,7 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="static/static.css?v=429007d2">
+    <link rel="stylesheet" href="static/static.css?v=35d70658">
     <title>Bjornpaedia — Bjørnpaedia is Kristian Bjørnard's running archive of essays, questions, notes, research, and half-formed ideas on sustainability, circular design, open-source practice (open sourcery?), and design education (and more). What it is not is a perfect portfolio of finished conclusions. The collection is full of thinking out loud, looking for intereconnection, and circling recurring questions: what does it mean to design for the welfare of all life, why climate change is inseparable from social and cultural change, what open access and transparency owe to design practice, and how to teach the next generation of designers to interrogate their own work rather than default to easy, greenwashed answers. A working design philosophy built over time.</title>
 </head><body class="tc-body"><p><div class="home">
     <div class="wjerk-header">
@@ -160,7 +160,7 @@
                 <li>
                     <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Questions.html">
                         <span class="doorName">Questions</span>
-                        <span class="doorCount">46</span>
+                        <span class="doorCount">47</span>
                         <span class="doorNote">The ones still open.</span>
                     </a>
                 </li>
@@ -168,7 +168,7 @@
                 <li>
                     <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Definition.html">
                         <span class="doorName">Definitions</span>
-                        <span class="doorCount">150</span>
+                        <span class="doorCount">151</span>
                         <span class="doorNote">A working vocabulary.</span>
                     </a>
                 </li>
@@ -192,7 +192,7 @@
                 <li>
                     <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/People%2520Doing%2520People%2520Things.html">
                         <span class="doorName">People</span>
-                        <span class="doorCount">236</span>
+                        <span class="doorCount">237</span>
                         <span class="doorNote">People go around doing people things.</span>
                     </a>
                 </li>
@@ -216,7 +216,7 @@
         </ul>
     </nav>
     <div id="tiddler-list-container">
-        <label class="searchLabel" for="entrySearch">Search all 2025 pages</label>
+        <label class="searchLabel" for="entrySearch">Search all 2028 pages</label>
         <input class="search" id="entrySearch" placeholder="Type a word or a name…" type="text">
         <p aria-live="polite" class="indexStatus"></p>
         <button aria-controls="entryList" aria-expanded="false" class="showAll" hidden="true" type="button">Show the full list</button>
@@ -3778,6 +3778,12 @@
                     <li>
                         <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Design%2520does%2520not%2520exist%2520for%2520its%2520own%2520sake%252C%2520but%2520reveals%2520its%2520relevance%2520and%2520meaning%2520in%2520our%2520everyday%2520life..html">
                             <span class="title">Design does not exist for its own sake, but reveals its relevance and meaning in our everyday life.</span>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Design%2520for%2520Disassembly.html">
+                            <span class="title">Design for Disassembly</span>
                         </a>
                     </li>
                 
@@ -8684,6 +8690,12 @@
                     </li>
                 
                     <li>
+                        <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Rebecca%2520Burgess.html">
+                            <span class="title">Rebecca Burgess</span>
+                        </a>
+                    </li>
+                
+                    <li>
                         <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Recyclable%252C%2520but%2520really%253F.html">
                             <span class="title">Recyclable, but really?</span>
                         </a>
@@ -11480,6 +11492,12 @@
                     </li>
                 
                     <li>
+                        <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/We%2520used%2520to%2520know%2520how.html">
+                            <span class="title">We used to know how</span>
+                        </a>
+                    </li>
+                
+                    <li>
                         <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/We%2520want%2520to%2520manufacture%2520them%2520from%2520cradle%2520to%2520cradle.html">
                             <span class="title">We want to manufacture them from cradle to cradle</span>
                         </a>
@@ -12400,6 +12418,13 @@
     button.hidden = false;
     button.addEventListener("click", function () { showAll = !showAll; update(); });
     list.on("searchComplete", update);
-    update();
+    update();// A search sent from a page's sidebar arrives as ?q=word.
+    var q = new URLSearchParams(window.location.search).get("q");
+    if (q) {
+        input.value = q;
+        list.search(q);
+        update();
+        box.scrollIntoView();
+    }
 })();
 </script></body></html>
