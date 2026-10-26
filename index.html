@@ -11,7 +11,7 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="static/static.css?v=b5e5f854">
+    <link rel="stylesheet" href="static/static.css?v=009077e8">
     <title>Bjornpaedia — Bjørnpaedia is Kristian Bjørnard's running archive of essays, questions, notes, research, and half-formed ideas on sustainability, circular design, open-source practice (open sourcery?), and design education (and more). What it is not is a perfect portfolio of finished conclusions. The collection is full of thinking out loud, looking for intereconnection, and circling recurring questions: what does it mean to design for the welfare of all life, why climate change is inseparable from social and cultural change, what open access and transparency owe to design practice, and how to teach the next generation of designers to interrogate their own work rather than default to easy, greenwashed answers. A working design philosophy built over time.</title>
 </head><body class="tc-body"><p><div class="home">
     <div class="wjerk-header">
@@ -117,7 +117,7 @@
         <h2 id="doorsHeading">Browse by kind</h2>
         <ul>
             
-                <li>
+                <li data-door="Big Ideas">
                     <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Big%2520Ideas.html">
                         <span class="doorName">Big Ideas</span>
                         <span class="doorCount">25</span>
@@ -125,7 +125,7 @@
                     </a>
                 </li>
             
-                <li>
+                <li data-door="Principle">
                     <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Principle.html">
                         <span class="doorName">Principles</span>
                         <span class="doorCount">40</span>
@@ -133,7 +133,7 @@
                     </a>
                 </li>
             
-                <li>
+                <li data-door="Essays">
                     <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Essays.html">
                         <span class="doorName">Essays</span>
                         <span class="doorCount">27</span>
@@ -141,7 +141,7 @@
                     </a>
                 </li>
             
-                <li>
+                <li data-door="Lecture">
                     <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Lecture.html">
                         <span class="doorName">Lectures</span>
                         <span class="doorCount">31</span>
@@ -149,15 +149,23 @@
                     </a>
                 </li>
             
-                <li>
+                <li data-door="Project">
                     <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Project.html">
                         <span class="doorName">Projects</span>
-                        <span class="doorCount">19</span>
+                        <span class="doorCount">11</span>
                         <span class="doorNote">Projects and project ideas.</span>
                     </a>
                 </li>
             
-                <li>
+                <li data-door="Assignment">
+                    <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Assignment.html">
+                        <span class="doorName">Assignments</span>
+                        <span class="doorCount">8</span>
+                        <span class="doorNote">Project briefs from my classes. Free to borrow.</span>
+                    </a>
+                </li>
+            
+                <li data-door="Questions">
                     <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Questions.html">
                         <span class="doorName">Questions</span>
                         <span class="doorCount">60</span>
@@ -165,39 +173,7 @@
                     </a>
                 </li>
             
-                <li>
-                    <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Definition.html">
-                        <span class="doorName">Definitions</span>
-                        <span class="doorCount">153</span>
-                        <span class="doorNote">A working vocabulary.</span>
-                    </a>
-                </li>
-            
-                <li>
-                    <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Source.html">
-                        <span class="doorName">Sources</span>
-                        <span class="doorCount">213</span>
-                        <span class="doorNote">Books, films, sites, and talks I draw on.</span>
-                    </a>
-                </li>
-            
-                <li>
-                    <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Quote.html">
-                        <span class="doorName">Quotes</span>
-                        <span class="doorCount">232</span>
-                        <span class="doorNote">Other people’s sentences worth keeping.</span>
-                    </a>
-                </li>
-            
-                <li>
-                    <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/People%2520Doing%2520People%2520Things.html">
-                        <span class="doorName">People</span>
-                        <span class="doorCount">245</span>
-                        <span class="doorNote">People go around doing people things.</span>
-                    </a>
-                </li>
-            
-                <li>
+                <li data-door="EssayADay">
                     <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/EssayADay.html">
                         <span class="doorName">Essay a Day</span>
                         <span class="doorCount">139</span>
@@ -205,7 +181,7 @@
                     </a>
                 </li>
             
-                <li>
+                <li data-door="Journal">
                     <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Journal.html">
                         <span class="doorName">Journal</span>
                         <span class="doorCount">55</span>
@@ -214,9 +190,53 @@
                 </li>
             
         </ul>
+        <h3 id="collectedHeading">Collected</h3>
+        <ul aria-labelledby="collectedHeading" class="collected">
+            
+                <li data-door="Definition">
+                    <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Definition.html">
+                        <span class="doorName">Definitions</span>
+                        <span class="doorCount">153</span>
+                        <span class="doorNote">A working vocabulary.</span>
+                    </a>
+                </li>
+            
+                <li data-door="Quote">
+                    <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Quote.html">
+                        <span class="doorName">Quotes</span>
+                        <span class="doorCount">232</span>
+                        <span class="doorNote">Other people’s sentences worth keeping.</span>
+                    </a>
+                </li>
+            
+                <li data-door="Source">
+                    <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Source.html">
+                        <span class="doorName">Sources</span>
+                        <span class="doorCount">214</span>
+                        <span class="doorNote">Books, films, sites, and talks I draw on.</span>
+                    </a>
+                </li>
+            
+                <li data-door="Object">
+                    <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Object.html">
+                        <span class="doorName">Objects</span>
+                        <span class="doorCount">29</span>
+                        <span class="doorNote">Made things worth pointing at: chairs, packaging, products.</span>
+                    </a>
+                </li>
+            
+                <li data-door="People Doing People Things">
+                    <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/People%2520Doing%2520People%2520Things.html">
+                        <span class="doorName">People</span>
+                        <span class="doorCount">247</span>
+                        <span class="doorNote">People go around doing people things.</span>
+                    </a>
+                </li>
+            
+        </ul>
     </nav>
     <div id="tiddler-list-container">
-        <label class="searchLabel" for="entrySearch">Search all 2079 pages</label>
+        <label class="searchLabel" for="entrySearch">Search all 2083 pages</label>
         <input class="search" id="entrySearch" placeholder="Type a word or a name…" type="text">
         <p aria-live="polite" class="indexStatus"></p>
         <button aria-controls="entryList" aria-expanded="false" class="showAll" hidden="true" type="button">Show the full list</button>
@@ -2392,6 +2412,12 @@
                     <li>
                         <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Ask%2520people%2520what%2520they%2520don%25E2%2580%2599t%2520want.html">
                             <span class="title">Ask people what they don’t want</span>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Assignment.html">
+                            <span class="title">Assignment</span>
                         </a>
                     </li>
                 
@@ -5144,6 +5170,12 @@
                     </li>
                 
                     <li>
+                        <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Galen%2520Cranz.html">
+                            <span class="title">Galen Cranz</span>
+                        </a>
+                    </li>
+                
+                    <li>
                         <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Garth%2520Braithwaite.html">
                             <span class="title">Garth Braithwaite</span>
                         </a>
@@ -7700,6 +7732,12 @@
                     </li>
                 
                     <li>
+                        <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Object.html">
+                            <span class="title">Object</span>
+                        </a>
+                    </li>
+                
+                    <li>
                         <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Oblique%2520Strategies.html">
                             <span class="title">Oblique Strategies</span>
                         </a>
@@ -10162,6 +10200,12 @@
                     <li>
                         <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/The%2520Cathedral%2520and%2520the%2520Bazaar.html">
                             <span class="title">The Cathedral and the Bazaar</span>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/The%2520Chair.html">
+                            <span class="title">The Chair</span>
                         </a>
                     </li>
                 
