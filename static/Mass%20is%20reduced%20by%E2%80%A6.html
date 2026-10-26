@@ -12,7 +12,7 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="stylesheet" href="static.css?v=009077e8">
+<link rel="stylesheet" href="static.css?v=46e7b030">
 <title>Mass is reduced by…: Bjornpaedia — Bjørnpaedia is Kristian Bjørnard's running archive of essays, questions, notes, research, and half-formed ideas on sustainability, circular design, open-source practice (open sourcery?), and design education (and more). What it is not is a perfect portfolio of finished conclusions. The collection is full of thinking out loud, looking for intereconnection, and circling recurring questions: what does it mean to design for the welfare of all life, why climate change is inseparable from social and cultural change, what open access and transparency owe to design practice, and how to teach the next generation of designers to interrogate their own work rather than default to easy, greenwashed answers. A working design philosophy built over time.</title>
 </head>
 <body class="tc-body">
@@ -116,17 +116,55 @@
 <!-- KB Additions -->
 <div class="tc-sidebar-scrollable" style="overflow: auto;">
 <div class="siteIntro">
-<div class="tc-sidebar-header"><h1 class="tc-site-title">Bjørnpaedia</h1></div>
+<div class="tc-sidebar-header"><h1 class="tc-site-title"><a href="/">Bjørnpaedia</a></h1></div>
 <div class="tc-site-subtitle"><p>Bjørnpaedia is Kristian Bjørnard's running archive of essays, questions, notes, research, and half-formed ideas on sustainability, circular design, open-source practice (open sourcery?), and design education (and more). What it is not is a perfect portfolio of finished conclusions. The collection is full of thinking out loud, looking for interconnection, and circling recurring questions: what does it mean to design for the welfare of all life, why climate change is inseparable from social and cultural change, what open access and transparency owe to design practice, and how to teach the next generation of designers to interrogate their own work rather than default to easy, greenwashed answers. A working design philosophy built over time.</p></div>
 </div>
 
-<!-- Search: sends the word to the homepage, which holds the list of every page and filters it (?q=). -->
-<form class="sidebarSearch" action="../" method="get" role="search">
+<!-- Search: sends the word to search.html, which holds the list of every page and filters it (?q=). The button is there so the search doesn't depend on knowing to press Enter. -->
+<form class="sidebarSearch" action="../search.html" method="get" role="search">
 <label class="searchLabel" for="sidebarSearchInput">Search all pages</label>
+<div class="searchRow">
 <input class="search" id="sidebarSearchInput" type="search" name="q" placeholder="Type a word or a name…">
+<button class="searchButton" type="submit">Search</button>
+</div>
 </form>
 </div>
 </div>
+
+<!-- The same footer as the homepage and search.html, written once in WjerkFooter. -->
+<p><footer class="wjerk-footer">
+    <ul>
+        <li>Bjørnpaedia, part of <a href="https://a.wjerk.shop">Wjerk.</a> <em>2026</em>.</li>
+        <li>Designing for the welfare of all life<sup>‡</sup> since 2003</li>
+        <li>We’re done with bauhaus; it’s time for <a class="tc-tiddlylink tc-tiddlylink-resolves" href="BauErden.html">BauErden! Design to (re)Build Earth!</a></li>
+        <li>—</li>
+        <li><small><sup>‡</sup>: Evolved from <a href="https://en.wikipedia.org/wiki/Bruce_Mau">Bruce Mau</a>’s <a href="https://www.brucemaudesign.com/work/massive-change">Massive Change</a>.</small></li>
+    </ul>
+    <ul>
+        <li>Written in <a href="https://tiddlywiki.com">TiddlyWiki</a>, published as plain static pages: one small page per idea, quick to load, and easy for search engines and people to find and link to.</li>
+        <li>Served by GitHub Pages. No tracking, no cookies.</li>
+        <li>—</li>
+        <li>Source: <a href="https://github.com/bjornmeansbear/sentence-a-day">github.com/bjornmeansbear/sentence-a-day</a></li>
+        <li>Site files: <a href="https://github.com/bjornmeansbear/bjornpaedia">github.com/bjornmeansbear/bjornpaedia</a></li>
+        <li>—</li>
+        <li>My writing: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY‑SA 4.0</a>. Quotes, excerpts and images belong to their authors, credited on their pages where known.</li>
+    </ul>
+    <ul>
+        <li><a href="https://a.wjerk.shop">Case Studies</a></li>
+        <li><a href="https://kristian.bjornard.com">Archived Work</a></li>
+        <li><a href="https://www.ookb.co">More Archived Work</a></li>
+        <li><a href="https://github.com/bjornmeansbear">GitHub</a></li>
+        <li><a href="https://www.instagram.com/bjornmeansbear">Instagram</a></li>
+        <li>—</li>
+        <li>Inspirations: <a href="https://solar.lowtechmagazine.com/">Low-Tech Magazine</a></li>
+        <li><a href="https://drawdown.org/">Project Drawdown</a></li>
+    </ul>
+    <ul>
+        <li><small>Earth in header: <a href="https://visibleearth.nasa.gov/images/57723/the-blue-marble">2002 Blue Marble</a> from NASA’s visible earth catalog.</small></li>
+        <li>—</li>
+        <li><small>Typography: System sans-serif — no webfonts loaded.</small></li>
+    </ul>
+</footer></p>
 
 </body>
 </html>
