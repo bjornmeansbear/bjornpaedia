@@ -11,3 +11,5 @@ Slowly collecting content. Merging things from various old sites of mine as well
 Enjoy.
 
 > **License:** Where the content in this document is by Kristian Bjornard (and not otherwise owned by, quoted from, or credited to someone else), it is licensed with [Creative Commons Attribution-ShareAlike 4.0](https://creativecommons.org/licenses/by-sa/4.0/). You can use this text for whatever you want as long as you cite where it came from, like linking back to this repo or merely stating that it came from Kristian Bjornard, and you must also license/share whatever you make in the same way -- share and share alike; let us create a freer and better and evolving culture!
+>
+> **Code:** the page templates, stylesheet and markup (generated from [sentence-a-day](https://github.com/bjornmeansbear/sentence-a-day)) are [BSD 3-Clause](LICENSE), the same license as [TiddlyWiki](https://tiddlywiki.com), which this is built on. Third-party pieces keep their own licenses: TiddlyWiki (BSD 3-Clause, Jeremy Ruston), the Relink plugins (BSD 3-Clause, Cameron Fischer), edit-comptext (AlainD, see its source), and List.js (MIT).
